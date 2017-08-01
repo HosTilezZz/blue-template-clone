@@ -46,7 +46,7 @@ li a:hover {
 .navigation-icon img {
     height: 2rem;
     width: 2rem;
-    padding: 25%;
+    padding: 25% 0 25% 25%;
 }
 
 .header-container {
@@ -114,7 +114,7 @@ h3 {
 }
 
 .left-panel {
-    margin: 7% 10%;
+    margin: 7% 10% 0 10%;
 }
 
 .left-panel table {
@@ -125,6 +125,10 @@ h3 {
 .bold {
     font-weight: 500;
     padding-right: 1rem;
+}
+
+.bold-only {
+    font-weight: 500;
 }
 
 .left-panel th {
@@ -219,14 +223,14 @@ progress::-moz-progress-bar {
     position: relative;
 }
 .progress-pie-chart.gt-50 {
-    background-color: #0eb1e8;
+    background-color: #0091d6;
 }
 
 .ppc-progress {
     content: "";
     position: absolute;
     border-radius: 50%;
-    left: calc(50% - 100px);
+    left: calc(50% - 101px);
     top: calc(50% - 100px);
     width: 200px;
     height: 200px;
@@ -245,8 +249,20 @@ progress::-moz-progress-bar {
     transform: rotate(360deg);
 }
 
+#fill90 {
+    transform: rotate(330deg);
+}
+
 #fill80 {
-    transform: rotate(300deg);
+  transform: rotate(280deg);  
+}
+
+#fill70 {
+  transform: rotate(250deg);   
+}
+
+#fill60 {
+  transform: rotate(200deg);   
 }
 
 .gt-50 .ppc-progress {
@@ -282,12 +298,56 @@ progress::-moz-progress-bar {
 }
 
 .progress-pie-chart {
-    margin: 50px auto 0;
+    margin: 8px 8px;
+}
+
+.social-div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #0aa1da;
+}
+
+.social-div a {
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    /*display: none;*/
+}
+
+.social-div figcaption {
+    text-align: center;
+    display: none;
+}
+
+.social-div img {
+    height: 3rem;
+    width: 3rem;
+    filter: invert(100%);
+    background-color: #ff7431;
+    border-radius: 50%;
+}
+
+.info-div {
+    background-color: #0187ce;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-div p {
+    width: 90%;
+    color: white;
+    margin: 0;
+}
+
+#address {
+    margin: 1rem 0;
 }
 
 /* a hack, firefox just won't align the bullet icon with the border, this is the fix*/
 @-moz-document url-prefix() { 
-  .work ul {
+  .flex-margin ul {
      margin: 0 21px;
   }
 }
