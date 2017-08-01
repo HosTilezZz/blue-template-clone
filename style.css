@@ -1,0 +1,326 @@
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    font-weight: 300;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    list-style-type: none;
+    background-color: #028cd5;
+    height: 4.7rem;
+}
+
+nav ul {
+    width: 90%;
+    margin: 0 5%;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 5% ;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6dcfff;
+}
+
+li a:hover {
+    color: white;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.2rem solid white;
+}
+
+.navigation-icon {
+    display: none;
+    position: absolute;
+    left: 85%;
+}
+
+.navigation-icon img {
+    height: 2rem;
+    width: 2rem;
+    padding: 25%;
+}
+
+.header-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0aa1da;
+    margin: 0;
+    height: 17.6rem;
+    overflow: hidden;
+}
+
+.avatar {/*in progress*/
+    display: none;
+    position: absolute;
+    margin-left: 70%;
+    min-width: 15%;
+    max-width: 50%;
+    height: auto;
+}
+
+h1, h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 5em;
+    margin: 0;
+    /*a cheap trick to fix bad font rendering*/
+    text-align: center;
+    -webkit-text-stroke: 1px white;
+            text-stroke: 1px white;
+}
+
+h2 {
+    font-size: 2.1em;
+}
+
+h3 {
+    color: #0aa1da;
+    font-weight: 400;
+    font-size: 2em;
+    text-align: center;
+}
+
+.intro-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 11.4rem;
+    background-color: #576268;
+    box-shadow: inset 0 20px 20px -10px rgba(0,0,0,0.4);
+    border-bottom: 3px solid #31383e;
+}
+
+.intro-text p {
+    font-size: 1.5em;
+    margin: 5% 10%;
+    color: white; 
+}
+
+.left-panel p {
+    display: inline;
+    color: #161b1f;
+    font-size: 1em;
+}
+
+.left-panel {
+    margin: 7% 10%;
+}
+
+.left-panel table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.bold {
+    font-weight: 500;
+    padding-right: 1rem;
+}
+
+.left-panel th {
+    font-weight: 300;
+    text-align: left;
+    padding: 0.7rem 0;
+}
+
+.table-border {
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.spacer {
+    margin: 0 0 2rem 0;
+}
+
+progress {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: #d8d8d8;
+    width: 8rem;
+    height: .7rem;
+    margin-left: .8rem;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #d8d8d8;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: #019ee3;
+}
+
+progress::-moz-progress-bar {
+    background-color: #019ee3;
+}
+
+.flex-display {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+
+.flex-display figure {
+    margin: 0 1rem;
+}
+
+.flex-display figcaption {
+    text-align: center;
+    margin: 0.1rem 0 0.5rem 0 ;
+    font-size: 1em;
+    color: #161b1f;
+    font-weight: 500;
+}
+
+.flex-display img {
+    height: 5rem;
+    width: 5rem;
+    filter: invert(100%);
+    background-color: #66321a;
+    border: 3px solid #4a382c;
+    border-radius: 50%;
+}
+
+.flex-margin {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.border-left {
+    border-left: 2px solid #08a8dc;
+}
+
+.flex-margin ul {
+    text-size-adjust: 100%;
+    list-style-type: disc;
+    list-style-image: url("bulletpoint.png");
+    margin: 0 18px;
+    padding: 0;
+    font-size: 1.3em;
+}
+
+/* modified http://www.formget.com/css-progress-bar/ */
+.progress-pie-chart {
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #E5E5E5;
+    position: relative;
+}
+.progress-pie-chart.gt-50 {
+    background-color: #0eb1e8;
+}
+
+.ppc-progress {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    left: calc(50% - 100px);
+    top: calc(50% - 100px);
+    width: 200px;
+    height: 200px;
+    clip: rect(0, 200px, 200px, 100px);
+}
+.ppc-progress .ppc-progress-fill {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    left: calc(50% - 100px);
+    top: calc(50% - 100px);
+    width: 200px;
+    height: 200px;
+    clip: rect(0, 100px, 200px, 0);
+    background: #0eb1e8;
+    transform: rotate(360deg);
+}
+
+#fill80 {
+    transform: rotate(300deg);
+}
+
+.gt-50 .ppc-progress {
+    clip: rect(0, 100px, 200px, 0);
+}
+.gt-50 .ppc-progress .ppc-progress-fill {
+    clip: rect(0, 200px, 200px, 100px);
+    background: #E5E5E5;
+}
+
+.ppc-percents {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    left: calc(50% - 173.91304px/2);
+    top: calc(50% - 173.91304px/2);
+    width: 173.91304px;
+    height: 173.91304px;
+    background: #fff;
+    text-align: center;
+    display: table;
+}
+.ppc-percents span {
+    display: block;
+    font-size: 1.7em;
+    font-weight: 400;
+    color: #161b1f;
+}
+
+.pcc-percents-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.progress-pie-chart {
+    margin: 50px auto 0;
+}
+
+/* a hack, firefox just won't align the bullet icon with the border, this is the fix*/
+@-moz-document url-prefix() { 
+  .work ul {
+     margin: 0 21px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+    .navigation-icon {
+        display: block; 
+    }
+    nav ul {
+        display: none;
+        background-color: #007cbd;
+        margin: 0;
+        width: 100%;
+    }
+    nav li {
+        display: block;
+        margin : 0.5rem 0 0 0;
+        padding: 0 1rem;
+        text-align: left;
+    }
+    .navigation {
+        z-index : 2;
+        position: relative;
+        top: 3.1rem;
+    }
+    li a {
+        color: white;
+    }
+    li a:hover {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+    li:active {
+        background-color: #00669c;
+    }
+}
