@@ -36,6 +36,7 @@
         <section class="intro-text">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus justo ex, pellentesque vitae orci non, tincidunt efficitur erat. Vestibulum ac eros ultricies, efficitur ligula nec, porttitor leo. Duis efficitur est vel tempus dignissim. Sed consequat vel nibh vel scelerisque. Vestibulum at laoreet ipsum. Donec quis dignissim turpis. Curabitur justo est, sodales a sem id, consequat venenatis eros. </p>
         </section>
+        <div class="sections-container">
         <section class="left-panel">
             <div class="spacer">
                 <h3>Personal</h3>
@@ -104,27 +105,27 @@
             <div class="spacer">
                 <h3>Hobbies</h3>
                 <div class="flex-display">
-                    <div>
+                    <div class="hobby-container">
                     <figure><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/86692-200.png" alt=""></figure>
                     <figcaption>Outdoors</figcaption> 
                     </div>
-                    <div>
+                    <div class="hobby-container">
                     <figure><img src="http://www.gondwanabrasil.com.br/uploads/images/exp_icone_8057607635750738333c3b222867845_sm.png" alt=""></figure>
                     <figcaption>Kayaking</figcaption> 
                     </div>
-                    <div>
+                    <div class="hobby-container">
                     <figure><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/34421-200.png" alt=""></figure>
                     <figcaption>Biking</figcaption> 
                     </div>
-                    <div>
+                    <div class="hobby-container">
                     <figure><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/930495-200.png" alt=""></figure>
                     <figcaption>Guitar</figcaption> 
                     </div>
-                    <div>
+                    <div class="hobby-container">
                     <figure><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/829132-200.png" alt=""></figure>
                     <figcaption>Gaming</figcaption> 
                     </div>
-                    <div>
+                    <div class="hobby-container">
                     <figure><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/108276-200.png" alt=""></figure>
                     <figcaption>Reading</figcaption> 
                     </div>
@@ -133,21 +134,22 @@
             </div>
         </section>
         <section class="right-panel">
+            <div class="right-panel-container">
             <div class="spacer">
                 <h3>Work</h3>
                 <div class="border-left flex-margin">
                     <ul>
                         <li class="table-border">
                                 <p class="bold-only">Design Director @ Big Design, New York (2015)</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus justo ex, pellentesque vitae orci non, tincidunt efficitur erat.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus justo ex, pellentesque vitae orci non.</p>
                         </li>
                         <li class="table-border">
                             <p class="bold-only">Senior Designer @ Design Company, Brooklyn (2012)</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus justo ex, pellentesque vitae orci non, tincidunt efficitur erat.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus justo ex, pellentesque vitae orci non. </p>
                         </li>
                         <li class="table-border">
                             <p class="bold-only">Designer @ Brand New, Paris (2008)</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus justo ex, pellentesque vitae orci non, tincidunt efficitur erat.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus justo ex, pellentesque vitae orci non. </p>
                         </li>
                     </ul>
                 </div>
@@ -155,7 +157,8 @@
             <div class="spacer">
                 <h3>Professional Skills</h3>
                 <!--modified http://www.formget.com/css-progress-bar-->
-                    <div class="flex-display">
+                    <div id="circular-progress" class="flex-display">
+                        <div class="circle-container">
                         <div class="progress-pie-chart gt-50" data-percent="0">
                             <div class="ppc-progress">
                              <div class="ppc-progress-fill"></div>
@@ -166,8 +169,10 @@
                                 </div>
                             </div>
                         </div>
-                        <progress style="display: none" id="progress_bar" value="100" max="100"></progress>  
+                        <progress style="display: none" id="progress_bar" value="100" max="100"></progress> 
+                        </div>
                         
+                        <div class="circle-container">
                         <div class="progress-pie-chart gt-50" data-percent="0">
                             <div class="ppc-progress">
                              <div id="fill90" class="ppc-progress-fill"></div>
@@ -179,7 +184,9 @@
                             </div>
                         </div>
                         <progress style="display: none" id="progress_bar" value="92" max="100"></progress>  
+                        </div>
                         
+                        <div class="circle-container">
                         <div class="progress-pie-chart gt-50" data-percent="0">
                             <div class="ppc-progress">
                              <div id="fill80" class="ppc-progress-fill"></div>
@@ -190,8 +197,10 @@
                                 </div>
                             </div>
                         </div>
-                        <progress style="display: none" id="progress_bar" value="78" max="100"></progress>  
+                        <progress style="display: none" id="progress_bar" value="78" max="100"></progress> 
+                        </div>
                         
+                        <div class="circle-container">
                         <div class="progress-pie-chart gt-50" data-percent="0">
                             <div class="ppc-progress">
                              <div id="fill70" class="ppc-progress-fill"></div>
@@ -203,7 +212,9 @@
                             </div>
                         </div>
                         <progress style="display: none" id="progress_bar" value="70" max="100"></progress>  
+                        </div>
                         
+                        <div class="circle-container">
                         <div class="progress-pie-chart gt-50" data-percent="0">
                             <div class="ppc-progress">
                              <div id="fill60" class="ppc-progress-fill"></div>
@@ -214,7 +225,8 @@
                                 </div>
                             </div>
                         </div>
-                        <progress style="display: none" id="progress_bar" value="56" max="100"></progress>  
+                        <progress style="display: none" id="progress_bar" value="56" max="100"></progress> 
+                        </div>
                     </div>
 
 
@@ -227,16 +239,18 @@
                     <ul>
                         <li class="table-border">
                                 <p class="bold-only">MA Graphics @ Royal college of Art, London (2006)</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus justo ex, pellentesque vitae orci non, tincidunt efficitur erat.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus justo ex, pellentesque vitae orci non.</p>
                         </li>
                         <li class="table-border">
                             <p class="bold-only">BA(hons) Graphics @ Central Saint Martins, London (2003)</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus justo ex, pellentesque vitae orci non, tincidunt efficitur erat.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus justo ex, pellentesque vitae orci non.</p>
                         </li>
                     </ul>
                 </div>
             </div>
+            </div>
         </section>
+        </div>
         <footer>
             <div class="social-div">
                 <div class="social-container">

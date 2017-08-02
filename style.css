@@ -355,6 +355,9 @@ progress::-moz-progress-bar {
     margin-bottom: 1rem;
 }
 
+.circle-container {
+}
+
 /* a hack, firefox just won't align the bullet icon with the border, this is the fix*/
 @-moz-document url-prefix() { 
   .flex-margin ul {
@@ -464,11 +467,72 @@ progress::-moz-progress-bar {
     }
     
     h1 {
-        margin: 10% 0 0 10%;
+        margin: 4rem 0 0 10%;
+    }
+    
+    h3 {
+        text-align: left;
+    }
+    
+    .left-panel, .right-panel {
+        padding-top: 2rem;
     }
     
     
+    .sections-container {
+        width: 80%;
+        margin: 0 auto;
+    }
     
+    .left-panel {
+        display: inline-block;
+        width: 40%;
+        vertical-align: top;
+        margin: 0;
+    }
+    
+    .left-panel table {
+        margin: 0;
+    }
+    
+    .flex-display {
+        justify-content: flex-start;
+    }
+    
+    .flex-display figure {
+        margin: 0 0.2rem 0 0;
+    }
+    
+    .hobby-container {
+        width: 33%;
+    }
+    
+    .right-panel {
+        width: 59%;
+        display: inline-block;
+        border-left: 2px solid black;
+    }
+    
+    .right-panel-container {
+        margin-left: 8%
+    }
+    
+    .progress-pie-chart {
+        margin: 0;
+    }
+    
+    .circle-container {
+        transform: scale(0.6);
+        margin: -2rem;
+    }
+    
+    #circular-progress {
+        justify-content: center;
+    }
+    
+    .flex-margin {
+        margin: 0;
+    }
     
     
 }
