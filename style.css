@@ -60,7 +60,7 @@ li a:hover {
     overflow: hidden;
 }
 
-.avatar {/*in progress*/
+.avatar {
     display: none;
     position: absolute;
     margin-left: 70%;
@@ -78,6 +78,10 @@ h1, h2 {
     text-align: center;
     -webkit-text-stroke: 1px white;
             text-stroke: 1px white;
+}
+
+h1 {
+    margin-top: 10%;
 }
 
 h2 {
@@ -305,6 +309,7 @@ progress::-moz-progress-bar {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    align-items: center;
     background-color: #0aa1da;
 }
 
@@ -312,7 +317,7 @@ progress::-moz-progress-bar {
     font-size: 1em;
     color: white;
     text-decoration: none;
-    /*display: none;*/
+    font-weight: 400;
 }
 
 .social-div figcaption {
@@ -333,6 +338,7 @@ progress::-moz-progress-bar {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 5px;
 }
 
 .info-div p {
@@ -343,6 +349,10 @@ progress::-moz-progress-bar {
 
 #address {
     margin: 1rem 0;
+}
+
+#site {
+    margin-bottom: 1rem;
 }
 
 /* a hack, firefox just won't align the bullet icon with the border, this is the fix*/
@@ -361,6 +371,7 @@ progress::-moz-progress-bar {
         background-color: #007cbd;
         margin: 0;
         width: 100%;
+        padding: 10px 0;
     }
     nav li {
         display: block;
@@ -371,7 +382,7 @@ progress::-moz-progress-bar {
     .navigation {
         z-index : 2;
         position: relative;
-        top: 3.1rem;
+        top: 4.4rem;
     }
     li a {
         color: white;
@@ -383,4 +394,81 @@ progress::-moz-progress-bar {
     li:active {
         background-color: #00669c;
     }
+}
+
+@media screen and (min-width: 768px) {
+    
+    body {
+        font-size: 18px;
+    }
+    
+    .ppc-percents span {
+        font-size: 1.5rem;
+    }
+    
+    .flex-display figure {
+        margin: 0 0.4rem;
+    }
+    
+    .info-div {
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem 0;
+    }
+    
+    .social-div {
+        height: 11.8rem;
+        flex-wrap: nowrap;
+    }
+    
+    .social-div figcaption {
+        display: block;
+    }
+    
+    .social-container {
+    margin: 0 1rem;
+    }
+    
+    .social-container figure {
+        margin: 1rem 5rem;
+    }
+    
+    .social-div img {
+        width: 4.2rem;
+        height: 4.2rem;
+    }
+    
+    #address {
+        margin: 0 2rem;
+    }
+    
+    #site {
+        margin: 0 2rem;
+    }
+    
+    .info-div p {
+        width: auto;
+    }
+    
+}
+
+@media screen and (min-width: 960px) {
+    
+    body {
+      font-size: 16px;  
+    }
+    
+    h1, h2 {
+        text-align: left;
+        margin-left: 10%;
+    }
+    
+    h1 {
+        margin: 10% 0 0 10%;
+    }
+    
+    
+    
+    
+    
 }
